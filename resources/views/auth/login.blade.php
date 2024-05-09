@@ -12,6 +12,8 @@
             </div>
         @endif
 
+        <p>Ajouter texte</p>
+        
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
