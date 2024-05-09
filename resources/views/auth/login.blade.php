@@ -13,6 +13,10 @@
         @endif
 
 
+        @php
+            throw new \Exception('exception');
+        @endphp
+        
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
