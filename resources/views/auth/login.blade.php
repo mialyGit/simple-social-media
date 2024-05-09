@@ -12,7 +12,9 @@
             </div>
         @endif
 
-        <p>Ajouter texte</p>
+        @php
+            throw new \Exception('expetion')
+        @endphp
         
         <form method="POST" action="{{ route('login') }}">
             @csrf
