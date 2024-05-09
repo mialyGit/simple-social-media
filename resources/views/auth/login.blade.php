@@ -6,13 +6,15 @@
 
         <x-jet-validation-errors class="mb-4" />
 
+        <p> Ajouter un texte </p>
+        
         @if (session('status'))
             <div class="mb-4 font-medium text-sm text-green-600">
                 {{ session('status') }}
             </div>
         @endif
 
-        
+
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
